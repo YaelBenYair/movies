@@ -30,6 +30,9 @@ class Movie(models.Model):
 
     actors = models.ManyToManyField(Actor, through='MovieActor')
 
+    def __str__(self):
+        return f"Movie name: {self.movie_name}"
+
     class Meta:
         db_table = 'movies'
 
