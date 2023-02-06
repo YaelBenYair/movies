@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
     for i in range(2, 10):
         m = Movie.objects.get(id=i)
-        Rating(movie=m, rating=9).save()
+        Rating(movie=m, rating=8).save()
 
 
 
